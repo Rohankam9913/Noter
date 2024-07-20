@@ -1,0 +1,320 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.left_nav{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.left_nav a{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+}
+
+.right_nav{
+    display: flex;
+    align-items: center;
+}
+
+.right_nav a{
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: orange;
+}
+
+.left_nav a:hover, .right_nav a:hover{
+    color: white;
+}
+
+.notes_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 15px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 0.3px solid #333;
+    border-radius: 4px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.title a{
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.description{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.button_section{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.btn{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.read{
+    background-color: rgb(76, 136, 76);
+    color: white;
+}
+
+.edit{
+    background-color: slateblue;
+    color: white;
+}
+
+.delete{
+    background-color: orangered;
+    color: white;
+}
+
+.date{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightslategrey;
+}
+
+.welcome{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: gainsboro;
+    text-align: center;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 30px;
+    width: 80%;
+}
+
+.title_section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title_section h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    color: rebeccapurple;
+}
+
+.title_section p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: gainsboro;
+}
+
+.content_section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+}
+
+.content_section h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    color: rebeccapurple;
+}
+
+.content_section p{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    color: gainsboro;
+}
+
+.content_section textarea{
+    border: none;
+    outline: none;
+    background-color: rgb(1, 1, 7);
+    color: gainsboro;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    resize: none;
+}
+
+.create{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 30px;
+    width: 80%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 60%;
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form div label{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    color: rebeccapurple;
+}
+
+.form div input{
+    border: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 9px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.form div textarea{
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    background-color: #333;
+    color: #fff;
+    font-size: 17px;
+    padding: 5px;
+    resize: none;
+}
+
+.create_btn{
+    width: fit-content;
+    background-color: orange;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 890px){
+    .notes_container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form{
+        width: 90%;
+    }
+
+    .form div input{
+        width: 100%;
+    }
+
+    .form div textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn{
+        font-size: 13px;
+    }
+    .date{
+        font-size: 10px;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .notes_container{
+        grid-template-columns: 1fr;
+    }
+
+    .right_nav p{
+        display: none;
+    }
+
+    .welcome{
+        display: flex;
+    }
+
+    .nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left_nav a{
+        font-size: 15px;
+    }
+
+    .right_nav a{
+        font-size: 15px;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+}
+

@@ -1,0 +1,92 @@
+.memo{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    padding: 10px 30px;
+}
+
+.heading{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.label{
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 45%;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    background-color: #444;
+    color: white;
+}
+
+.form_heading{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.form_footer{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.form_footer button{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form_footer small{
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    color: gray;
+    font-weight: 400;
+}
+
+.auth_link{
+    color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1020px){
+    .input{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .input{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .input{
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Edit Note
+{% endblock %}
+
+{% block content %}
+<div class="create">
+    <form method="post" class="form">
+        {% csrf_token %}
+        {{ form }}
+
+        <button class="btn create_btn">Edit</button>
+    </form>
+</div>
+{% endblock %}

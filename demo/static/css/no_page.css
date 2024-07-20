@@ -1,0 +1,29 @@
+h2.error{
+    color: red;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.not_found{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.not_found h2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.no_page_btn{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+    font-weight: 600;
+}

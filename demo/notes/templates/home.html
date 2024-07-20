@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <p class="welcome">{{ user }}'s Notes</p>
+
+    <div class="notes_container">
+        {% for note in notes %}
+            <div class="cards">
+                <h3 class="title"><a href="{% url 'particular_note' note.id %}">{{ note.title }}</a></h3>
+                <p class="description">{{ note.content }}...</p>
+                
+                <section class="button_section">
+                    <a href="{% url 'edit_note' note.id %}" class="btn edit">Edit</a>
+                    <a href="{% url 'delete_note' note.id %}" class="btn delete" type="submit">Delete</a>
+                    
+                    <p class="date">Created on {{ note.createdAt }}</p>
+                </section>
+            </div>
+        {% endfor %}
+
+        <!-- <div class="cards">
+            <h3 class="title">Title of the card</h3>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, sapiente....</p>
+
+            <section class="button_section">
+                <button class="btn edit">Edit</button>
+                <button class="btn delete">Delete</button>
+                <p class="date">Created on 18/7/24</p>
+            </section>
+        </div>
+
+        <div class="cards">
+            <h3 class="title">Title of the card</h3>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, sapiente....</p>
+
+            <section class="button_section">
+                <button class="btn edit">Edit</button>
+                <button class="btn delete">Delete</button>
+                <p class="date">Created on 18/7/24</p>
+            </section>
+        </div>
+
+        <div class="cards">
+            <h3 class="title">Title of the card</h3>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, sapiente....</p>
+
+            <section class="button_section">
+                <button class="btn edit">Edit</button>
+                <button class="btn delete">Delete</button>
+                <p class="date">Created on 18/7/24</p>
+            </section>
+        </div>
+
+        <div class="cards">
+            <h3 class="title">Title of the card</h3>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, sapiente....</p>
+
+            <section class="button_section">
+                <button class="btn edit">Edit</button>
+                <button class="btn delete">Delete</button>
+                <p class="date">Created on 18/7/24</p>
+            </section>
+        </div>
+
+        <div class="cards">
+            <h3 class="title">Title of the card</h3>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, sapiente....</p>
+
+            <section class="button_section">
+                <button class="btn edit">Edit</button>
+                <button class="btn delete">Delete</button>
+                <p class="date">Created on 18/7/24</p>
+            </section>
+        </div> -->
+    </div>
+{% endblock %}
